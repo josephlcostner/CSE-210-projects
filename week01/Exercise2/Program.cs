@@ -10,23 +10,23 @@ class Program
             string grade = Console.ReadLine();
             int number = int.Parse(grade);
 
-            if (number <= 100)
+            if (number >= 90)
             {
                 Console.WriteLine("A");
             }
-            else if (number <= 89)
+            else if (number >= 80)
             {
                 Console.WriteLine("B");
             }
-            else if (number <= 79)
+            else if (number >= 70)
             {
                 Console.WriteLine("C");
             }
-            else if (number <= 69)
+            else if (number >= 60)
             {
                 Console.WriteLine("D");
             }
-            else if (number <= 59)
+            else if (number >= 0)
             {
                 Console.WriteLine("F");
             }
