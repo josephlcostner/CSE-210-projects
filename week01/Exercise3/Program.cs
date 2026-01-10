@@ -9,25 +9,25 @@ class Program
             Random randomGenerator = new Random();
             int number = randomGenerator.Next(1, 11);
 
-            for (int i = 0; i < 10; i++)
+            int guess = -1;
+
+            while (guess != number)
             {
-                Console.WriteLine (i);
-            }
+                Console.Write("What is your guess? ");
+                guess = int.Parse(Console.ReadLine());
 
-            Console.Write("Guess the magic number: ");
-            string guess = Console.ReadLine();
-            int Cardinal = int.Parse(guess);
-
-
-
-            if (number == Cardinal)
-            {
-                Console.WriteLine("That is correct!");
-            }
-
-            else if (number != Cardinal)
-            {
-                Console.WriteLine("Wrong number. Guess again: ");
+                if (guess > number)
+                {
+                    Console.WriteLine("Lower");
+                }
+                else if (guess < number)
+                {
+                    Console.WriteLine("Higher");
+                }
+                else
+                {
+                    Console.WriteLine("You guessed it!");
+                }
             }
         }
 
