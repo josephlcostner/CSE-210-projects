@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Drawing;
+using System.Xml.Schema;
+using System.Linq;
 class Program
 {
     static void Main(string[] args)
@@ -12,6 +14,7 @@ class Program
         string input;
         Console.Write("Enter a list of numbers, quit by typing in 0.");
         Console.Write("Type in a number: ");
+        
         
         
         while (true)
@@ -25,13 +28,20 @@ class Program
                 else if (int.TryParse(input, out int number))
                 {
                     numbers.Add(number);
+                    
                 }
                 else
                 {
                     Console.WriteLine("This is not correct, please try again.");
                 }
+                
             }
-            Console.WriteLine($"The sum is: {string.Join(",", numbers)}");
+            int totalSum = numbers.Sum();
+            double average = numbers.Average();
+            int maxNumber = numbers.Max();
+            Console.WriteLine($"The sum is: {totalSum}");
+            Console.WriteLine($"The average is: {average}");
+            Console.WriteLine($"The largest number is: {maxNumber}");
         }
     }
 }
