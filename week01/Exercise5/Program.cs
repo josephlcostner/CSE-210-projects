@@ -7,30 +7,32 @@ class Program
     {
         Console.WriteLine("Hello World! This is the Exercise5 Project.");
     }
-    static void DisplayWelcome()
+    static void DisplayWelcome(string Welcome)
     {
         Console.WriteLine("Welcome to the Program!");
+        
     }
 
-    static void PromptUserName()
+    static void PromptUserName(string userName)
     {
         Console.WriteLine("What is your name? ");
     }
 
-    static int PromptUserNumber()
+    static void PromptFavoriteNumber(int number)
     {
-        Console.WriteLine("What is your favorite number? ");
+        Console.Write("What is your favorite number? ");
     }
 
-    static void SquaredNumber()
+    static int SquaredNumber(int number)
     {
-        return PromptUserNumber * PromptUserNumber;
+        int total = number * number;
+        return total;
     }
 
     static void DisplayPersonalMessage()
     {
         Console.WriteLine($"Hello {PromptUserName}, the square of your favorite number is {SquaredNumber}");
-        return DisplayPersonalMessage;
+        
     }
         
 }
