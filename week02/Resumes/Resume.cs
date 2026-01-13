@@ -7,6 +7,6 @@
         }
         public void Display()
         {
-            
+            Console.WriteLine($"{_memberName}");
         }
          }

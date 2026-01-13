@@ -20,11 +20,12 @@ class Program
         job2._company = "Apple";
         job2._startYear = "2022";
         job2._endYear = "2023";
+    Resume resume1 = new Resume();
+        resume1._memberName = "Joseph Costner";
+        resume1.Display();
         job1.Display();
         job2.Display();
-
-        Resume resume1 = new Resume();
-        resume1._memberName = "Joseph Costner";
+        
     }
     
     
