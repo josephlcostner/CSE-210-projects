@@ -1,4 +1,5 @@
 using System;
+using System.Reflection;
 using System.Reflection.Metadata.Ecma335;
 
 class Program
@@ -32,7 +33,7 @@ class Program
     static void DisplayPersonalMessage()
     {
         Console.WriteLine($"Hello {PromptUserName}, the square of your favorite number is {SquaredNumber}");
-        
+        return DisplayPersonalMessage;
     }
         
 }

@@ -8,11 +8,13 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("Hello World! This is the Resumes Project.");
-    }
-public class Job
+
+    public class Job
     {
       Job job1 = new Job();
-    public string job1._jobTitle = "Software Engineer";  
+    public string _job1 = "";
+    }
+ 
     }
 
     
