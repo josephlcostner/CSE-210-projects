@@ -1,15 +1,5 @@
-    public class Resume
-    {
-        public string _name = "";
-        public string _jobs = "List<Job>";
-        public Resume()
-        {
-        }
-        public void Display()
-        {
-            
-        }
-    }
+
+   
     public class Job
     {
         public string _company = "";

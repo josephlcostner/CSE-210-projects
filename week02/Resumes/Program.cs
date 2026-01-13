@@ -22,7 +22,11 @@ class Program
         job2._endYear = "2023";
         job1.Display();
         job2.Display();
+
+        Resume resume1 = new Resume();
+        resume1._memberName = "Joseph Costner";
     }
+    
     
     
 }
