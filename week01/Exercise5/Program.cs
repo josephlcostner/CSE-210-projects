@@ -8,18 +8,17 @@ class Program
     {
         Console.WriteLine("Hello World! This is the Exercise5 Project.");
     }
-    static void DisplayWelcome(string Welcome)
+    static void DisplayWelcome(string DisplayWelcome)
     {
         Console.WriteLine("Welcome to the Program!");
-        
     }
 
-    static void PromptUserName(string userName)
+    static string PromptUserName()
     {
         Console.WriteLine("What is your name? ");
     }
 
-    static void PromptFavoriteNumber(int number)
+    static int PromptFavoriteNumber(int number)
     {
         Console.Write("What is your favorite number? ");
     }
@@ -30,7 +29,7 @@ class Program
         return total;
     }
 
-    static void DisplayPersonalMessage()
+    static string DisplayPersonalMessage()
     {
         Console.WriteLine($"Hello {PromptUserName}, the square of your favorite number is {SquaredNumber}");
         
