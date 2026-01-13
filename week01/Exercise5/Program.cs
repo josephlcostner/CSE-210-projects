@@ -33,7 +33,7 @@ class Program
     static void DisplayPersonalMessage()
     {
         Console.WriteLine($"Hello {PromptUserName}, the square of your favorite number is {SquaredNumber}");
-        return DisplayPersonalMessage;
+        
     }
         
 }
