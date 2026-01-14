@@ -13,26 +13,25 @@ class Program
         Console.WriteLine("Welcome to the Program!");
     }
 
-    static string PromptUserName()
+    static void PromptUserName()
     {
         Console.WriteLine("What is your name? ");
     }
 
-    static int PromptFavoriteNumber(int number)
+    static void PromptFavoriteNumber(int number)
     {
         Console.Write("What is your favorite number? ");
     }
 
-    static int SquaredNumber(int number)
+    static void SquaredNumber(int number)
     {
         int total = number * number;
-        return total;
+        
     }
 
-    static string DisplayPersonalMessage()
+    static void DisplayPersonalMessage()
     {
-        Console.WriteLine($"Hello {PromptUserName}, the square of your favorite number is {SquaredNumber}");
-        
+        Console.WriteLine($"Hello {PromptUserName}, {DisplayWelcome}, the square of {PromptFavoriteNumber} is {SquaredNumber}");
     }
-        
+    
 }
