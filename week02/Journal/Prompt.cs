@@ -16,4 +16,8 @@ public class Prompt
         string randomPrompt = prompts[randomIndex];
         Console.WriteLine(randomPrompt);
     }
+    public void Display()
+    {
+        Console.WriteLine($"{List}");
+    }
 }
