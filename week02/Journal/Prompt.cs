@@ -18,6 +18,6 @@ public class Prompt
     }
     public void Display()
     {
-        Console.WriteLine($"{List}");
+        
     }
 }
