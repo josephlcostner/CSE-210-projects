@@ -47,15 +47,17 @@ class Program
         }
         else if (number == 3)
         {
-           string Journal = "journalLog.txt";
-        using (StreamWriter writer = new StreamWriter(Journal, true))
-                {
-                    
-                } 
+            string dataToSave = "";
+            File.WriteAllText("Journal.txt", dataToSave);
+        
         }
         else if (number == 4)
         {
-            
+            if (File.Exists("Journal.txt"))
+                {
+                    string loadedData = File.ReadAllText("Journal.txt");
+                    Console.WriteLine("Loaded:" + loadedData);
+                }
         }
         else if (number == 5)
         {
