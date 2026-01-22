@@ -1,13 +1,14 @@
 using System;
+using System.IO;
+using Prompt;
 
 class Program
 {
     static void Main(string[] args)
     {
          int number = int.Parse("");
-            string number = Console.ReadLine();
+        
          
-         string userinput = Console.ReadLine();
         {
             Console.WriteLine("Hello World! This is the Journal Project.");
 
@@ -26,15 +27,31 @@ class Program
         {
         if (number == 1)
         {
-            
+            string randomPrompt = PromptGenerator.GetRandomPrompt();
+            Console.WriteLine(randomPrompt);
+            Console.ReadKey();
+            Console.Write("");
         }
         else if (number == 2)
         {
-            
+            List<string> linesToDisplay = new List<string>
+            {
+                
+            };
+            foreach(string line in linesToDisplay)
+                
+                {
+                    Console.WriteLine(line);
+                }
+                Console.ReadLine();
         }
         else if (number == 3)
         {
-            
+           string Journal = "journalLog.txt";
+        using (StreamWriter writer = new StreamWriter(Journal, true))
+                {
+                    
+                } 
         }
         else if (number == 4)
         {

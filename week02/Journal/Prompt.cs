@@ -1,8 +1,10 @@
-public class Prompt
-{
-    static void Main()
+using System;
+
+    namespace Prompt{
+        public static class PromptGenerator
     {
-        List<string> prompts = new List<string>
+        private static readonly string[] _prompts =
+    
         {
             "Who was the most interesting person you interacted with today?",
             "How did I see thhe hand of the Lord in my life today?",
@@ -10,14 +12,15 @@ public class Prompt
             "What was the strongest emotion I felt today?",
             "If I had one thing I could do all over again today, what would it be?"
         };
-
-        Random random = Random.Shared;
-        int randomIndex = random.Next(prompts.Count);
-        string randomPrompt = prompts[randomIndex];
-        Console.WriteLine(randomPrompt);
-    }
-    public void Display()
-    {
+        private static readonly Random _random = new Random();
+        public static string GetRandomPrompt()
+        {
+            int index = _random.Next(_prompts.Length);
+            return _prompts[index];
+        }
+    
+    
+    
         
     }
 }
