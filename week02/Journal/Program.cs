@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using Prompt;
+using Calander;
 
 class Program
 {
@@ -10,6 +11,7 @@ class Program
         
          
         {
+           
             Console.WriteLine("Hello World! This is the Journal Project.");
 
         
@@ -20,18 +22,18 @@ class Program
             Console.WriteLine("5.Quit");
 
             Console.WriteLine($"Please input a number from 1-5 to continue with your journal: ");
-            
            
         }
         while (number != 5)
         {
         if (number == 1)
-        {
+            {
             string randomPrompt = PromptGenerator.GetRandomPrompt();
             Console.WriteLine(randomPrompt);
             Console.ReadKey();
             Console.Write("");
-        }
+            Console.WriteLine({Calander});
+            }
         else if (number == 2)
         {
             List<string> linesToDisplay = new List<string>
