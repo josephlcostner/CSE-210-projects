@@ -1,16 +1,16 @@
 using System;
 using System.IO;
 using Prompt;
-using Calander;
+
 
 class Program
 {
     static void Main(string[] args)
     {
-         int number = int.Parse("");
-        
+         
          
         {
+            
            
             Console.WriteLine("Hello World! This is the Journal Project.");
 
@@ -22,17 +22,20 @@ class Program
             Console.WriteLine("5.Quit");
 
             Console.WriteLine($"Please input a number from 1-5 to continue with your journal: ");
+            
+            
+            
            
         }
-        while (number != 5)
+        string number = Console.ReadLine();
         {
-        if (number == 1)
+        if (number == "1")
             {
             string randomPrompt = PromptGenerator.GetRandomPrompt();
             Console.WriteLine(randomPrompt);
             Console.ReadKey();
             Console.Write("");
-            Console.WriteLine({Calander});
+            DateTime currentLocal = DateTime.Now;
             }
         else if (number == 2)
         {
