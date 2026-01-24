@@ -7,8 +7,10 @@ class Program
 {
     static void Main(string[] args)
     {
-         
-         
+        Journal journal = new Journal();
+        PromptGenerator promptGenerator = new PromptGenerator();
+         string choice = "";
+         while (choice != "5")
         {
             
            
@@ -24,17 +26,16 @@ class Program
             Console.WriteLine($"Please input a number from 1-5 to continue with your journal: ");
             
             
-            
+            choice = Console.ReadLine();
            
-        }
-        string number = Console.ReadLine();
-        {
-        if (number == "1")
+         
+        
+
+        if (choice == "1")
             {
             string randomPrompt = PromptGenerator.GetRandomPrompt();
             Console.WriteLine(randomPrompt);
-            Console.ReadKey();
-            Console.Write("");
+            Console.Write("> ");
             DateTime currentLocal = DateTime.Now;
             }
         else if (number == 2)
@@ -73,6 +74,5 @@ class Program
            Console.WriteLine("This is not a correct number.") ;
             }
         }
-    }
+     
 
-}
